@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Supreme Spike";
+    src: url(assets/fonts/supreme-spike.otf);
+}
+
+@font-face {
+    font-family: "B612";
+    src: url(assets/fonts/B612_regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Supreme Spike";
+    letter-spacing: 0.5rem;
+    text-align: center;
+    width: 86%;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 30px;
+    color: rgb(81, 255, 0);
+    text-shadow: 2px 4px 20px;
+    background-color: rgba(0, 0, 0, 0.416);
+    display: flex;
+    position: absolute;
+    top: 5%;
+    left: 38%;
+}
+
+.bigClock {
+    display: flex;
+    width: 8em;
+    height: 8em;
+    margin: 15px;
+    margin-left: 30px;
+    background-image: url("./assets/images/earth.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2%;
+    right: 3%;
+}
+
+#iss {
+    width: 20%;
+    position: absolute;
+}
+
+.clock {
+    display: flex;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.598);
+}
+
+p {
+    margin: 2px;
+    color:  rgb(102, 255, 0);
+    font-family: Helvetica, sans-serif;
+}
+
+#windows {
+    position: relative;
+}
+
+.data {
+    margin-bottom: 1em;
+}
+
+#dashboard {
+    width: 10%;
+    border: double rgb(102, 255, 0) 3px;
+    border-radius: 10px;
+    font-family: "B612";
+    color: rgb(102, 255, 0);
+    letter-spacing: 0.2rem;
+    margin: 5em;
+    padding: 2em;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    box-shadow: 1px 2px 20px 1px rgba(102, 255, 0, 0.5)
+}
