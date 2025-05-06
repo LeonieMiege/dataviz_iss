@@ -1,4 +1,4 @@
-// déclaration des variables
+// init variables
 
 const hoursDiv = document.querySelector('#hours');
 const minutesDiv = document.querySelector('#minutes');
@@ -6,15 +6,15 @@ const secondsDiv = document.querySelector('#seconds');
 const issImage = document.querySelector('#iss');
 
 
-// déclaration des fonctions
+// init functions
 
-function getClock() {
-    let intervalId = setInterval(() => {
+function getTime() {
+    let intervalId = setInterval(() => { 
         let currentTime = new Date();
         let hours = currentTime.getHours();
         let minutes = currentTime.getMinutes();
         let seconds = currentTime.getSeconds();
-
+        
         animClockIss(hours);
         hours = checkTime(hours);
         minutes = checkTime(minutes);
@@ -94,6 +94,6 @@ function animClockIss(hours) {
 }
 
 
-// execution des fonctions
+// execute code
 
-getClock();
+getTime();
